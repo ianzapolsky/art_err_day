@@ -71,13 +71,6 @@ def fetch_unseen_mentions(latest_id):
 def fetch_latest_id():
   return t.search.tweets(q='@'+BOT_NAME, result_type='recent', count=1)['statuses'][0]['id']
 
-# write the latest id to .latest_id in the current directory
-def set_latest_id():
-  latest_id = str(fetch_latest_id())
-  f = open('.latest_id', 'w')
-  f.write(latest_id)
-  f.close()
-  
 
 if __name__ == '__main__':
 
@@ -85,6 +78,29 @@ if __name__ == '__main__':
   t = Twitter(auth=OAuth(OAUTH_TOKEN, OAUTH_SECRET,
                          CONSUMER_KEY, CONSUMER_SECRET))
 
-  msg = random_tweet()
-  t.statuses.update(status=msg)
+  # read in the latest id from the last check
+  f = open('.latest_id', 'r')
+  latest_id = f.read().rstrip()
+  f.close()
+
+  # check for unseen tweets since the latest id
+  results = fetch_unseen_mentions(latest_id)
+
+  # if we got any tweets, reply to them
+  if results:
+    for tweet in reversed(results):
+
+      tweeter  = tweet['user']['screen_name']
+      artist = random_artist()
+      url    = random_link(artist)
+      msg    = '@'+tweeter+' '+random_tweet()
+      t.statuses.update(status=msg)
+      
+      latest_id = str(tweet['id'])
+
+  # write the new latest_id to the file
+  f = open('.latest_id', 'w')
+  f.write(latest_id)
+  f.close()
+
 
