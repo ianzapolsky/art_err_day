@@ -34,7 +34,13 @@ artists = ['Pablo Picasso', 'Edward Hopper', 'Wassily Kandinsky',
            'Alfred Sisley', 'Mark Tansey', 'Simon Hantai', 'Harold Klunder',
            'Ron Martin', 'Frederick B Taylor', 'William R Leigh', 
            'Josef Albers', 'Theo van Doesburg', 'James Ensor', 'Gustav Klimt',
-           'Umberto Boccioni', 'Varvara Stepanova', 'Aleksandr Rodchenko']
+           'Umberto Boccioni', 'Varvara Stepanova', 'Aleksandr Rodchenko',
+           'Lyonel Feininger', 'Paul Klee', 'Oskar Schlemmer', 'Marcel Breuer',
+           'Lazlo Moholy-Nagy', 'Alexej Jawlensky', 'Karl Caspar',
+           'Christian Rohlfs', 'Karl Schmidt-Rottluff', 
+           'Ernst Ludwig Kirchner', 'Lasar Segall', 'Max Beckmann', 
+           'Emil Nolde', 'Otto Dix', 'George Grosz', 'Lovis Corinth', 
+           'Oskar Kokoschka', 'Felix Nussbaum', 'Egon Schiele']
 
 # List of messages
 messages = ['check dis', 'yo, peep this', 'dooope', 'siiick',
