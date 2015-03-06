@@ -25,21 +25,44 @@ GOOGLE_CX = os.environ['GOOGLE_CX']
 # List of artists we want in the collection
 artists = ['Pablo Picasso', 'Edward Hopper', 'Wassily Kandinsky',
            'Kenneth Noland', 'Alexander Calder', 'Marcel Duchamp',
-           'Fritz Glarner', 'Adolf Dehn', 'Roger de la Fresnaye',
+           'Fritz Glarner', 'Roger de la Fresnaye',
            'Kasimir Malevich', 'Patrick Henry Bruce', 'Renan Ozturk'
            'Fernand Leger', 'Stuart Davis', 'Antoine-Louis Barye',
            'Edward John Poynter', 'Carrie Mae Weems', 'Larry Sultan',
-           'Paul Klee', 'Juan Gris', 'Giorgio de Chririco', 'Joan Miro',
+           'Juan Gris', 'Giorgio de Chririco', 'Joan Miro',
            'Stanton McDonald-Wright', 'Charles Sheeler', 'Paul Signac',
            'Alfred Sisley', 'Mark Tansey', 'Simon Hantai', 'Harold Klunder',
            'Ron Martin', 'Frederick B Taylor', 'William R Leigh', 
            'Josef Albers', 'Theo van Doesburg', 'James Ensor', 'Gustav Klimt',
-           'Umberto Boccioni', 'Varvara Stepanova', 'Aleksandr Rodchenko']
+           'Varvara Stepanova', 'Aleksandr Rodchenko', 'Andrew Wyeth',
+           'Henri Matisse', 'Paul Cezanne', 'Alexis Gritchenko', 'Charles Demuth',
+           'Giorgio de Chirico', 'Chaim Soutine', 'William Glackens',
+           'Afro Basaldella', 'Robert Lotiron', 'Maurice Utrillo', 'Max Weber',
+           'Julie Dickson',
+
+           # early 20th centry German
+
+           'Lyonel Feininger', 'Paul Klee', 'Oskar Schlemmer', 'Marcel Breuer',
+           'Lazlo Moholy-Nagy', 'Alexej Jawlensky', 'Karl Caspar',
+           'Christian Rohlfs', 'Karl Schmidt-Rottluff', 
+           'Ernst Ludwig Kirchner', 'Lasar Segall', 'Max Beckmann', 
+           'Emil Nolde', 'Otto Dix', 'George Grosz', 'Lovis Corinth', 
+           'Oskar Kokoschka', 'Felix Nussbaum', 'Egon Schiele', 'Adolf Dehn',
+
+           # Italian futurists
+
+           'Umberto Boccioni', 'Giacomo Balla', 'Luigi Russolo', 'Carlo Carra',
+           'Gino Severini', 'Ardengo Soffici', 'Pasqualino Cangiullo',
+           "Antonio Sant'Elia", 'Mario Chiattone', 'Mario Sironi',
+           'Fortunato Depero', 'Benedetta Cappa Marinetti', 'Enrico Prampolini',
+           'Ugo Pozzo', 'Fedele Azari', 'Gerardo Dottori',
+           'Alessandro Bruschetti', 'Osvaldo Peruzzi', 'Tullio Crali']
 
 # List of messages
 messages = ['check dis', 'yo, peep this', 'dooope', 'siiick',
             'new favorite', 'so artsy', 'so profound', 'so gnarly bra',
-            'oh this one hot', 'this is sick']
+            'oh this one hot', 'this is sick', 'really love this one', 
+            'discovered this today', 'this is awesome', 'oh snap']
 
 def random_artist():
   return artists[random.randint(0, (len(artists)-1))]

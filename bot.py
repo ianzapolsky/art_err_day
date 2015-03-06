@@ -39,15 +39,19 @@ artists = ['Pablo Picasso', 'Edward Hopper', 'Wassily Kandinsky',
            'Giorgio de Chirico', 'Chaim Soutine', 'William Glackens',
            'Afro Basaldella', 'Robert Lotiron', 'Maurice Utrillo', 'Max Weber',
            'Julie Dickson',
+
            # early 20th centry German
+
            'Lyonel Feininger', 'Paul Klee', 'Oskar Schlemmer', 'Marcel Breuer',
            'Lazlo Moholy-Nagy', 'Alexej Jawlensky', 'Karl Caspar',
            'Christian Rohlfs', 'Karl Schmidt-Rottluff', 
            'Ernst Ludwig Kirchner', 'Lasar Segall', 'Max Beckmann', 
            'Emil Nolde', 'Otto Dix', 'George Grosz', 'Lovis Corinth', 
            'Oskar Kokoschka', 'Felix Nussbaum', 'Egon Schiele', 'Adolf Dehn',
+
            # Italian futurists
-           'Umberto Boccioni', 'Giacomo Balla', 'Luigi Russolo', 'Carlo Carrá',
+
+           'Umberto Boccioni', 'Giacomo Balla', 'Luigi Russolo', 'Carlo Carra',
            'Gino Severini', 'Ardengo Soffici', 'Pasqualino Cangiullo',
            "Antonio Sant'Elia", 'Mario Chiattone', 'Mario Sironi',
            'Fortunato Depero', 'Benedetta Cappa Marinetti', 'Enrico Prampolini',
