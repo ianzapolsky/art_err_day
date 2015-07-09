@@ -1,3 +1,0 @@
-* * * * * /bin/sh /home/ubuntu/art_err_day/respond.sh
-
-0 */12 * * * /bin/sh /home/ubuntu/art_err_day/post.sh
