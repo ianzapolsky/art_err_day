@@ -4,7 +4,6 @@
 
 import os
 import random
-import time
 
 from apiclient.discovery import build
 from twitter import Twitter, OAuth, TwitterHTTPError
@@ -93,7 +92,6 @@ def fetch_unseen_mentions(latest_id):
 # return the id of the latest tweet mentioning @BOT_NAME
 def fetch_latest_id():
   return t.search.tweets(q='@'+BOT_NAME, result_type='recent', count=1)['statuses'][0]['id']
-
 
 if __name__ == '__main__':
 
