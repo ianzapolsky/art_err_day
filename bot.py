@@ -65,7 +65,14 @@ messages = ['check dis', 'yo, peep this', 'dooope', 'siiick',
             'new favorite', 'so artsy', 'so profound', 'so gnarly bra',
             'oh this one hot', 'this is sick', 'really love this one', 
             'discovered this today', 'this is awesome', 'oh snap',
-            'this is sick', 'one of a kind', 'i like this'] 
+            'this is sick', 'one of a kind', 'i like this', 'OMG', 'incredible',
+            'one of my favorites', 'a true original', 'crazy']
+
+hashtags = ['art', 'arterrday', 'paintings', 'beautiful', 'insipiring', 'art',
+            'artsy']
+
+def random_hashtag():
+  return '#'+hashtags[random.randint(0, (len(hashtags)-1))]
 
 def random_artist():
   return artists[random.randint(0, (len(artists)-1))]
@@ -88,7 +95,7 @@ def random_link(artist):
 def random_tweet():
   artist = random_artist()
   url    = random_link(artist)
-  msg    = random_message()+' (by '+artist+') '+url
+  msg    = random_message()+' (by '+artist+') '+url+' '+random_hashtag()
   return msg
 
 if __name__ == '__main__':
